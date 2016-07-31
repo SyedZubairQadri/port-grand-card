@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="infoapp.com.example.android.infoapp.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:gravity="top|center_vertical"
+    android:background="@drawable/d"
+    android:padding="25dp">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="OFFICAL WEBSITE PORTGRAND"
+        android:onClick="Officalweb"
+        android:id="@+id/url"
+        android:background="#bf4f69fa"
+        android:layout_margin="25sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:onClick="Facebook"
+        android:id="@+id/fb"
+        android:background="@drawable/fb" />
+
+    <Button
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:onClick="twitter"
+        android:id="@+id/insta"
+        android:background="@drawable/twit"
+        android:layout_toRightOf="@+id/fb" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:onClick="Googlemap"
+        android:id="@+id/mp"
+        android:background="@drawable/gp"
+        android:layout_below="@+id/insta"
+        android:layout_toLeftOf="@+id/insta"
+        android:layout_toStartOf="@+id/insta" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:onClick="instgram"
+        android:id="@+id/instaa"
+        android:background="@drawable/instagram"
+        android:layout_below="@+id/insta"
+        android:layout_alignRight="@+id/insta"
+        android:layout_alignEnd="@+id/insta"
+        android:layout_toRightOf="@+id/fb"
+        android:layout_toEndOf="@+id/fb" />
+
+</RelativeLayout>
+
+</LinearLayout>
