@@ -54,7 +54,7 @@ public void Officalweb (View view){
             startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("http://instagram.com/pakistan")));
+                    Uri.parse("http://instagram.com/portgrand")));
         }
     }
 }

@@ -28,7 +28,12 @@
         android:layout_height="39dp"
         android:onClick="Facebook"
         android:id="@+id/fb"
-        android:background="@drawable/fb" />
+        android:background="@drawable/fb"
+        android:layout_alignTop="@+id/mp"
+        android:layout_toLeftOf="@+id/instaa"
+        android:layout_toStartOf="@+id/instaa"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp" />
 
     <Button
         android:layout_width="42dp"
@@ -36,7 +41,11 @@
         android:onClick="twitter"
         android:id="@+id/insta"
         android:background="@drawable/twit"
-        android:layout_toRightOf="@+id/fb" />
+        android:layout_alignTop="@+id/mp"
+        android:layout_toRightOf="@+id/mp"
+        android:layout_toEndOf="@+id/mp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp" />
 
     <Button
         android:layout_width="40dp"
@@ -44,9 +53,10 @@
         android:onClick="Googlemap"
         android:id="@+id/mp"
         android:background="@drawable/gp"
-        android:layout_below="@+id/insta"
-        android:layout_toLeftOf="@+id/insta"
-        android:layout_toStartOf="@+id/insta" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="81dp" />
 
     <Button
         android:layout_width="40dp"
@@ -54,11 +64,9 @@
         android:onClick="instgram"
         android:id="@+id/instaa"
         android:background="@drawable/instagram"
-        android:layout_below="@+id/insta"
-        android:layout_alignRight="@+id/insta"
-        android:layout_alignEnd="@+id/insta"
-        android:layout_toRightOf="@+id/fb"
-        android:layout_toEndOf="@+id/fb" />
+        android:layout_alignTop="@+id/fb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
 
